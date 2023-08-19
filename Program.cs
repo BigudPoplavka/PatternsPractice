@@ -2,6 +2,7 @@
 using PatternsPractice.FactoryMethod;
 using PatternsPractice.Buidler;
 using PatternsPractice.Strategy;
+using PatternsPractice.AbstractFabric;
 
 namespace PatternsPractice
 {
@@ -15,7 +16,8 @@ namespace PatternsPractice
         {
             1 => new BuilderExample(),
             2 => new FactoryMethodExample(),
-            3 => new StrategyExample()
+            3 => new AbstractFabricExample(),
+            4 => new StrategyExample()
         };
 
         static void Main(string[] args)
@@ -23,8 +25,8 @@ namespace PatternsPractice
             while(true)
             {
                 Console.WriteLine("\n\nВыбор паттерна: \nПОРОЖДАЮЩИЕ:\n |- 1 - Строитель" +
-                    "\n |- 2 - Фабричный метод" +
-                    "\nПОВЕДЕНЧЕСКИЕ:\n |- 3 - Стратегия \n--------\n0 - Выход");
+                    "\n |- 2 - Фабричный метод" + "\n |- 3 - Абстрактная фабрика" +
+                    "\nПОВЕДЕНЧЕСКИЕ:\n |- 4 - Стратегия \n--------\n0 - Выход");
 
                 if (int.TryParse(Console.ReadLine(), out answer))
                 {

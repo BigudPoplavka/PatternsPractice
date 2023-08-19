@@ -6,6 +6,6 @@ namespace PatternsPractice
 {
     interface IPatternExample
     {
-        void StartExample();
+        void StartExample(); 
     }
 }

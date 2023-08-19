@@ -3,7 +3,7 @@
 namespace PatternsPractice.FactoryMethod
 {
 	public abstract class Product: IProduct
-{
+    {
 		protected string _productDescription;
 		protected string _productName;
         private int _minPrice;
